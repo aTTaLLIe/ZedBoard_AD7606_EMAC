@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Aug 16 19:11:02 2021
+# Process ID: 11480
+# Current directory: D:/Project_2020/Zynq_AD7606/Zynq_DMA_EMAC_AD7606
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17480 D:\Project_2020\Zynq_AD7606\Zynq_DMA_EMAC_AD7606\Zynq_DMA_EMAC.xpr
+# Log file: D:/Project_2020/Zynq_AD7606/Zynq_DMA_EMAC_AD7606/vivado.log
+# Journal file: D:/Project_2020/Zynq_AD7606/Zynq_DMA_EMAC_AD7606\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only D:/Project_2020/Zynq_AD7606/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project_2020/Zynq_AD7606/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2019.1/data/ip'.
+WARNING: [BD 41-1663] The design 'design_1.bd' cannot be modified due to following reason(s):
+* Project is read-only. Please run 'save_project_as' before making any change to the bd-design. 
+
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_auto_pc_0
+design_1_processing_system7_0_0
+design_1_axi_smc_0
+design_1_axi_dma_0_0
+design_1_AC7606_0_3
+design_1_ps7_0_axi_periph_0
+design_1_rst_ps7_0_100M_0
+design_1_xlconcat_0_0
+
+WARNING: [Project 1-229] Project 'Zynq_DMA_EMAC.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 853.785 ; gain = 239.961
+update_compile_order -fileset sources_1
+open_bd_design {D:/Project_2020/Zynq_AD7606/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:user:AC7606:1.0 - AC7606_0
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from BD file <D:/Project_2020/Zynq_AD7606/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1080.785 ; gain = 38.559
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 16 19:14:58 2021...

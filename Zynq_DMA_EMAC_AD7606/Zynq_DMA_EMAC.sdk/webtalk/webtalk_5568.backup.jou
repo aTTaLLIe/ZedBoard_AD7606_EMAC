@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# 
+# Start of session at: Mon Jul  5 16:03:08 2021
+# Process ID: 5568
+# Current directory: D:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC/Zynq_DMA_EMAC.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC/Zynq_DMA_EMAC.sdk/webtalk/webtalk.log
+# Journal file: D:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC/Zynq_DMA_EMAC.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

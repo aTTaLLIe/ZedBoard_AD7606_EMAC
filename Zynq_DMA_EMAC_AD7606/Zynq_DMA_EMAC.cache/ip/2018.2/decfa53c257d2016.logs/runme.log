@@ -1,0 +1,1287 @@
+
+*** Running vivado
+    with args -log design_1_AC7606_0_3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_AC7606_0_3.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_AC7606_0_3.tcl -notrace
+Command: synth_design -top design_1_AC7606_0_3 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6452 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 455.441 ; gain = 100.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_AC7606_0_3' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/synth/design_1_AC7606_0_3.v:57]
+INFO: [Synth 8-6157] synthesizing module 'AC7606_v1_0' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0.v:4]
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0.v:52]
+INFO: [Synth 8-6157] synthesizing module 'AC7606_v1_0_M00_AXIS' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0_M00_AXIS.v:4]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+	Parameter WAIT_TRIGGER bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter WAIT_FIRST_DATA bound to: 2'b10 
+	Parameter READ_CHANALS bound to: 2'b11 
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0_M00_AXIS.v:47]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/clk_wiz_1/clk_wiz.v:71]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_clk_wiz' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/clk_wiz_1/clk_wiz_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25762]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25762]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_clk_wiz' (4#1) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/clk_wiz_1/clk_wiz_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz' (5#1) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/clk_wiz_1/clk_wiz.v:71]
+WARNING: [Synth 8-350] instance 'clk_block' of module 'clk_wiz' requires 5 connections, but only 4 given [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0_M00_AXIS.v:92]
+INFO: [Synth 8-226] default block is never used [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0_M00_AXIS.v:129]
+INFO: [Synth 8-638] synthesizing module 'axis_data_fifo' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_data_fifo_1/synth/axis_data_fifo.vhd:77]
+	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 18 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 18 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 4kx4 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 1022 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 1021 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_RD_DEPTH bound to: 1024 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 10 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_WR_DEPTH bound to: 1024 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 10 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 1 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 4 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 12 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 11 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 12 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 12 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 11 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 11 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx36 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 33 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 15 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 15 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 15 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 13 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1021 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 13 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 13 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1021 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1021 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_2' declared at 'd:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_fifo_1/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38483' bound to instance 'U0' of component 'fifo_generator_v13_2_2' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_data_fifo_1/synth/axis_data_fifo.vhd:553]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1055]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1107]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (6#1) [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1055]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:205]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (7#1) [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:358]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (19#1) [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-256] done synthesizing module 'axis_data_fifo' (34#1) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_data_fifo_1/synth/axis_data_fifo.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'fix_to_float' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/fix_to_float/synth/fix_to_float.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 6 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 1 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at 'd:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/float_divide/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/fix_to_float/synth/fix_to_float.vhd:199]
+INFO: [Synth 8-256] done synthesizing module 'fix_to_float' (50#1) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/fix_to_float/synth/fix_to_float.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'float_divide' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/float_divide/synth/float_divide.vhd:74]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 1 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 29 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 1 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at 'd:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/float_divide/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/float_divide/synth/float_divide.vhd:206]
+INFO: [Synth 8-256] done synthesizing module 'float_divide' (57#1) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/float_divide/synth/float_divide.vhd:74]
+WARNING: [Synth 8-6014] Unused sequential element ADC_data_reg_reg was removed.  [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0_M00_AXIS.v:165]
+WARNING: [Synth 8-3848] Net M_AXIS_TSTRB in module/entity AC7606_v1_0_M00_AXIS does not have driver. [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0_M00_AXIS.v:38]
+WARNING: [Synth 8-3848] Net m_axis_result_tready in module/entity AC7606_v1_0_M00_AXIS does not have driver. [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0_M00_AXIS.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'AC7606_v1_0_M00_AXIS' (58#1) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0_M00_AXIS.v:4]
+INFO: [Synth 8-6157] synthesizing module 'AC7606_v1_0_S00_AXIS' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0_S00_AXIS.v:4]
+	Parameter IDLE bound to: 8'b00000000 
+	Parameter PROCESSING bound to: 8'b00000001 
+	Parameter END bound to: 8'b00000010 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axis_fifo' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_fifo_1/synth/axis_fifo.v:57]
+INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v1_1_18_axis_data_fifo' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_fifo_1/hdl/axis_data_fifo_v1_1_vl_rfs.v:62]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000000010011 
+	Parameter C_FIFO_DEPTH bound to: 128 - type: integer 
+	Parameter C_FIFO_MODE bound to: 1 - type: integer 
+	Parameter C_IS_ACLK_ASYNC bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_ACLKEN_CONV_MODE bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TREADY_EXISTS bound to: 1 - type: integer 
+	Parameter P_TDATA_EXISTS bound to: 1 - type: integer 
+	Parameter P_TSTRB_EXISTS bound to: 0 - type: integer 
+	Parameter P_TKEEP_EXISTS bound to: 0 - type: integer 
+	Parameter P_TLAST_EXISTS bound to: 1 - type: integer 
+	Parameter P_TID_EXISTS bound to: 0 - type: integer 
+	Parameter P_TDEST_EXISTS bound to: 0 - type: integer 
+	Parameter P_TUSER_EXISTS bound to: 0 - type: integer 
+	Parameter P_AXIS_PAYLOAD_WIDTH bound to: 33 - type: integer 
+	Parameter P_WR_PNTR_WIDTH bound to: 7 - type: integer 
+	Parameter P_FIFO_COUNT_WIDTH bound to: 8 - type: integer 
+	Parameter P_FIFO_TYPE bound to: 1 - type: integer 
+	Parameter P_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter P_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter P_MSGON_VAL bound to: 1 - type: integer 
+	Parameter P_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter LP_S_ACLKEN_CAN_TOGGLE bound to: 0 - type: integer 
+	Parameter LP_M_ACLKEN_CAN_TOGGLE bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH bound to: 18 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DOUT_WIDTH bound to: 18 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_RD_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_RD_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_RD_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_RD_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_RD_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 7 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_fifo_1/hdl/axis_data_fifo_v1_1_vl_rfs.v:181]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_fifo_1/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
+	Parameter C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_SIGNAL_SET bound to: 255 - type: integer 
+	Parameter C_S_ACLKEN_CAN_TOGGLE bound to: 0 - type: integer 
+	Parameter C_M_ACLKEN_CAN_TOGGLE bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TPAYLOAD_WIDTH bound to: 44 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_fifo_1/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+	Parameter C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_TPAYLOAD_WIDTH bound to: 44 - type: integer 
+	Parameter C_SIGNAL_SET bound to: 255 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TDATA_INDX bound to: 0 - type: integer 
+	Parameter P_TSTRB_INDX bound to: 32 - type: integer 
+	Parameter P_TKEEP_INDX bound to: 36 - type: integer 
+	Parameter P_TLAST_INDX bound to: 40 - type: integer 
+	Parameter P_TID_INDX bound to: 41 - type: integer 
+	Parameter P_TDEST_INDX bound to: 42 - type: integer 
+	Parameter P_TUSER_INDX bound to: 43 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (59#1) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_fifo_1/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_fifo_1/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+	Parameter C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_TPAYLOAD_WIDTH bound to: 44 - type: integer 
+	Parameter C_SIGNAL_SET bound to: 255 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TDATA_INDX bound to: 0 - type: integer 
+	Parameter P_TSTRB_INDX bound to: 32 - type: integer 
+	Parameter P_TKEEP_INDX bound to: 36 - type: integer 
+	Parameter P_TLAST_INDX bound to: 40 - type: integer 
+	Parameter P_TID_INDX bound to: 41 - type: integer 
+	Parameter P_TDEST_INDX bound to: 42 - type: integer 
+	Parameter P_TUSER_INDX bound to: 43 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (60#1) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_fifo_1/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' (61#1) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_fifo_1/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_v1_1_18_axis_data_fifo' (66#1) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_fifo_1/hdl/axis_data_fifo_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'axis_fifo' (67#1) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_fifo_1/synth/axis_fifo.v:57]
+WARNING: [Synth 8-689] width (1) of port connection 'm_axis_tdata' does not match port width (32) of module 'axis_fifo' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0_S00_AXIS.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'AC7606_v1_0_S00_AXIS' (68#1) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0_S00_AXIS.v:4]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'AC7606_v1_0_S00_AXIS_inst'. This will prevent further optimization [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'AC7606_v1_0' (69#1) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_AC7606_0_3' (70#1) [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/synth/design_1_AC7606_0_3.v:57]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_aclken_converter_wrapper has unconnected port ACLK
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_aclken_converter_wrapper has unconnected port ARESETN
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_aclken_converter_wrapper has unconnected port S_ACLKEN
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_aclken_converter_wrapper has unconnected port M_ACLKEN
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port RST_FULL_FF
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_RST
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port SRST
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port SAFETY_CKT_WR_RST
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[6]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[5]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[4]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[3]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[2]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[1]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[0]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[6]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[5]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[4]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[3]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[2]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[1]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[0]
+WARNING: [Synth 8-3331] design wr_bin_cntr__parameterized0 has unconnected port RST
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port WR_EN_INTO_LOGIC
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port WR_RST_INTO_LOGIC
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port RD_EN
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port WR_RST_BUSY
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port EMPTY
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port ALMOST_EMPTY
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[6]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[5]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[4]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[3]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[2]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[1]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[0]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[6]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[5]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[4]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[3]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[2]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[1]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[0]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[6]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[5]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[4]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[3]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[2]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[1]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[0]
+WARNING: [Synth 8-3331] design updn_cntr has unconnected port RST
+WARNING: [Synth 8-3331] design rd_fwft has unconnected port RD_RST
+WARNING: [Synth 8-3331] design rd_fwft has unconnected port SAFETY_CKT_RD_RST
+WARNING: [Synth 8-3331] design rd_fwft has unconnected port RAM_ALMOST_EMPTY
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_RST
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port SAFETY_CKT_RD_RST
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[6]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[5]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[4]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[3]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[2]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[1]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[0]
+WARNING: [Synth 8-3331] design rd_bin_cntr__parameterized0 has unconnected port RST
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port RD_EN_INTO_LOGIC
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port RD_RST_INTO_LOGIC
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port RD_RST_BUSY
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port RST_FULL_FF
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port ALMOST_FULL_FB
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port FULL
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port WR_PNTR_PLUS1_RD[6]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port WR_PNTR_PLUS1_RD[5]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port WR_PNTR_PLUS1_RD[4]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port WR_PNTR_PLUS1_RD[3]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port WR_PNTR_PLUS1_RD[2]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port WR_PNTR_PLUS1_RD[1]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port WR_PNTR_PLUS1_RD[0]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH[6]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH[5]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH[4]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH[3]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH[2]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH[1]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH[0]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH_ASSERT[6]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH_ASSERT[5]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH_ASSERT[4]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH_ASSERT[3]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH_ASSERT[2]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH_ASSERT[1]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH_ASSERT[0]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH_NEGATE[6]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH_NEGATE[5]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH_NEGATE[4]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH_NEGATE[3]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH_NEGATE[2]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH_NEGATE[1]
+WARNING: [Synth 8-3331] design rd_logic__parameterized0 has unconnected port PROG_EMPTY_THRESH_NEGATE[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized0 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized0 has unconnected port REGCEA
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:16 ; elapsed = 00:01:17 . Memory (MB): peak = 853.129 ; gain = 497.754
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin float_divide:m_axis_result_tready to constant 0 [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0_M00_AXIS.v:260]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:17 . Memory (MB): peak = 853.129 ; gain = 497.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:16 ; elapsed = 00:01:17 . Memory (MB): peak = 853.129 ; gain = 497.754
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1452 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_fifo_1/axis_fifo/axis_fifo.xdc] for cell 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst'
+Finished Parsing XDC File [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_fifo_1/axis_fifo/axis_fifo.xdc] for cell 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst'
+Parsing XDC File [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_data_fifo_1/axis_data_fifo.xdc] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0'
+Finished Parsing XDC File [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_data_fifo_1/axis_data_fifo.xdc] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0'
+Parsing XDC File [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/clk_wiz_1/clk_wiz.xdc] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/clk_block/inst'
+Finished Parsing XDC File [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/clk_wiz_1/clk_wiz.xdc] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/clk_block/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/clk_wiz_1/clk_wiz.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_AC7606_0_3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_AC7606_0_3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.runs/design_1_AC7606_0_3_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.runs/design_1_AC7606_0_3_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.runs/design_1_AC7606_0_3_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_AC7606_0_3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_AC7606_0_3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_data_fifo_1/axis_data_fifo_clocks.xdc] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0'
+Finished Parsing XDC File [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ip/design_1_AC7606_0_3/src/axis_data_fifo_1/axis_data_fifo_clocks.xdc] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_AC7606_0_3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_AC7606_0_3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_AC7606_0_3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_AC7606_0_3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 17 instances were transformed.
+  FDE => FDRE: 17 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 915.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:27 ; elapsed = 00:01:28 . Memory (MB): peak = 915.832 ; gain = 560.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:27 ; elapsed = 00:01:28 . Memory (MB): peak = 915.832 ; gain = 560.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/AC7606_v1_0_S00_AXIS_inst/data_input. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/AC7606_v1_0_M00_AXIS_inst/fifo_output. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/AC7606_v1_0_M00_AXIS_inst/clk_block. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/AC7606_v1_0_M00_AXIS_inst/float_divide. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst. (constraint file  D:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.runs/design_1_AC7606_0_3_synth_1/dont_touch.xdc, line 25).
+Applied set_property DONT_TOUCH = true for inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0. (constraint file  D:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.runs/design_1_AC7606_0_3_synth_1/dont_touch.xdc, line 28).
+Applied set_property DONT_TOUCH = true for inst/AC7606_v1_0_M00_AXIS_inst/clk_block/inst. (constraint file  D:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.runs/design_1_AC7606_0_3_synth_1/dont_touch.xdc, line 34).
+Applied set_property DONT_TOUCH = true for inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/AC7606_v1_0_M00_AXIS_inst/fifo_output/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/\gen_fifo_generator.fifo_generator_inst /inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:01:28 . Memory (MB): peak = 915.832 ; gain = 560.457
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "leaving_empty_fwft" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "chunk_is_zero_ip" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_det" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_det" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 's_axis_const_tvalid_reg' into 's_axis_volt_tvalid_reg' [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0_M00_AXIS.v:172]
+WARNING: [Synth 8-6014] Unused sequential element s_axis_const_tvalid_reg was removed.  [d:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.srcs/sources_1/bd/design_1/ipshared/d1fb/hdl/AC7606_v1_0_M00_AXIS.v:172]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'AC7606_v1_0_M00_AXIS'
+INFO: [Synth 8-802] inferred FSM for state register 'read_ch_reg' in module 'AC7606_v1_0_M00_AXIS'
+INFO: [Synth 8-5544] ROM "BUSY_now" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SCLK_reg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_ch" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'AC7606_v1_0_S00_AXIS'
+INFO: [Synth 8-5545] ROM "input_command" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "get_voltage_reg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                               00
+                  iSTATE |                                1 |                               01
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'read_ch_reg' using encoding 'sequential' in module 'AC7606_v1_0_M00_AXIS'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            WAIT_TRIGGER |                               00 |                               00
+                   START |                               01 |                               01
+         WAIT_FIRST_DATA |                               10 |                               10
+            READ_CHANALS |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'AC7606_v1_0_M00_AXIS'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                         00000000
+              PROCESSING |                              010 |                         00000001
+                     END |                              100 |                         00000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'AC7606_v1_0_S00_AXIS'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:29 ; elapsed = 00:01:30 . Memory (MB): peak = 915.832 ; gain = 560.457
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/DELAY_INVALID_OP' (floating_point_v7_1_6_delay__parameterized8) to 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/DELAY_INVALID_OP' (floating_point_v7_1_6_delay__parameterized8) to 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/DELAY_INVALID_OP' (floating_point_v7_1_6_delay__parameterized8) to 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/DELAY_INVALID_OP' (floating_point_v7_1_6_delay__parameterized8) to 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/DELAY_INVALID_OP' (floating_point_v7_1_6_delay__parameterized8) to 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (floating_point_v7_1_6_delay__parameterized8) to 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (floating_point_v7_1_6_delay__parameterized8) to 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/NORMALIZE_DEL' (floating_point_v7_1_6_delay__parameterized12) to 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/NORMALIZE_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DELAY_ACCUM_OVERFLOW' (floating_point_v7_1_6_delay__parameterized8) to 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (floating_point_v7_1_6_delay__parameterized8) to 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (floating_point_v7_1_6_delay__parameterized8) to 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/ROUND/NORMALIZE_DEL' (floating_point_v7_1_6_delay__parameterized12) to 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/ROUND/NORMALIZE_RND1_DEL'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_volt_tdata_reg[15]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[0]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[1]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[2]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[3]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[4]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[5]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[6]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[7]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[8]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[9]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[10]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[11]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[12]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[13]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[14]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[15]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[16]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[17]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[18]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[19]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[20]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[21]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[22]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[23]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[24]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[25]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[26]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[27]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[28]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/s_axis_const_tdata_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AC7606_v1_0_M00_AXIS_inst /\s_axis_const_tdata_reg[30] )
+WARNING: [Synth 8-3332] Sequential element (s_axis_const_tdata_reg[30]) is unused and will be removed from module AC7606_v1_0_M00_AXIS.
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/EXP_MOD_DEL/i_pipe/opt_has_pipe.first_q_reg[6]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/fix_to_float/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/EXP_MOD_DEL/i_pipe/opt_has_pipe.first_q_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AC7606_v1_0_M00_AXIS_inst /fix_to_float/U0/i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[0].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/MSB_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/EXP/NORMALIZE_UP_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[2].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[10]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[11]' (FDE) to 'inst/AC7606_v1_0_M00_AXIS_inst/float_divide/U0/i_synth/DIV_OP.SPD.OP/EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AC7606_v1_0_M00_AXIS_inst /float_divide/U0/i_synth/\DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AC7606_v1_0_M00_AXIS_inst /float_divide/U0/i_synth/\DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AC7606_v1_0_M00_AXIS_inst /float_divide/U0/i_synth/\DIV_OP.SPD.OP/EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AC7606_v1_0_M00_AXIS_inst /float_divide/U0/i_synth/\DIV_OP.SPD.OP/EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[8].pipe_reg[8][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[9].pipe_reg[9][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[10].pipe_reg[10][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[13].pipe_reg[13][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[14].pipe_reg[14][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[15].pipe_reg[15][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[16].pipe_reg[16][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[17].pipe_reg[17][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[18].pipe_reg[18][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[19].pipe_reg[19][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[20].pipe_reg[20][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[21].pipe_reg[21][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[22].pipe_reg[22][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[23].pipe_reg[23][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[24].pipe_reg[24][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[25].pipe_reg[25][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[8].pipe_reg[8][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[9].pipe_reg[9][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[10].pipe_reg[10][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[13].pipe_reg[13][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[14].pipe_reg[14][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[15].pipe_reg[15][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[16].pipe_reg[16][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[17].pipe_reg[17][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[18].pipe_reg[18][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[19].pipe_reg[19][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[20].pipe_reg[20][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[21].pipe_reg[21][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[22].pipe_reg[22][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[23].pipe_reg[23][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[24].pipe_reg[24][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[25].pipe_reg[25][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[26].pipe_reg[26][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[8].pipe_reg[8][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[9].pipe_reg[9][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[10].pipe_reg[10][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[13].pipe_reg[13][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[14].pipe_reg[14][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[15].pipe_reg[15][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[16].pipe_reg[16][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[17].pipe_reg[17][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[18].pipe_reg[18][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[19].pipe_reg[19][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[20].pipe_reg[20][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[21].pipe_reg[21][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[22].pipe_reg[22][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[23].pipe_reg[23][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[24].pipe_reg[24][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[25].pipe_reg[25][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[26].pipe_reg[26][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][3]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][2]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][1]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][3]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][2]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][1]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][3]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][2]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][1]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][3]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][2]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][1]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][3]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][2]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][1]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][3]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][2]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[1]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[31]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[30]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[29]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[28]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[27]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[26]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[25]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[24]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[23]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[22]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[21]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[20]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[19]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[18]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[17]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[16]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[15]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[14]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[13]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[12]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[11]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[10]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[9]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[8]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[7]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[6]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[5]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[4]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[3]' (FDRE) to 'inst/AC7606_v1_0_S00_AXIS_inst/input_command_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AC7606_v1_0_S00_AXIS_inst /\input_command_reg[2] )
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[0]' (FDS) to 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[1]' (FD) to 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[2]' (FD) to 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[3]' (FD) to 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[4]' (FD) to 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.POR_A_reg' (FD) to 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.POR_B_reg'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.ENA_NO_REG.ENA_dly_reg' (FD) to 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.ENB_NO_REG.ENB_dly_reg'
+INFO: [Synth 8-3886] merging instance 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.ENA_NO_REG.ENA_dly_D_reg' (FD) to 'inst/AC7606_v1_0_S00_AXIS_inst/data_input/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.ENB_NO_REG.ENB_dly_D_reg'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:01:33 . Memory (MB): peak = 915.832 ; gain = 560.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:38 ; elapsed = 00:01:40 . Memory (MB): peak = 918.621 ; gain = 563.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:40 . Memory (MB): peak = 924.945 ; gain = 569.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 947.195 ; gain = 591.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin float_divide:m_axis_result_tready to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 947.195 ; gain = 591.820
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 947.195 ; gain = 591.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:40 ; elapsed = 00:01:43 . Memory (MB): peak = 947.195 ; gain = 591.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:40 ; elapsed = 00:01:43 . Memory (MB): peak = 947.195 ; gain = 591.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:41 ; elapsed = 00:01:43 . Memory (MB): peak = 947.195 ; gain = 591.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:41 ; elapsed = 00:01:43 . Memory (MB): peak = 947.195 ; gain = 591.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |CARRY4     |     5|
+|3     |LUT1       |    19|
+|4     |LUT2       |   235|
+|5     |LUT3       |   747|
+|6     |LUT4       |    70|
+|7     |LUT5       |    73|
+|8     |LUT6       |    95|
+|9     |MMCME2_ADV |     1|
+|10    |MUXCY      |   724|
+|11    |RAMB18E1   |     1|
+|12    |RAMB36E1   |     1|
+|13    |SRL16E     |    20|
+|14    |SRLC32E    |    22|
+|15    |XORCY      |   707|
+|16    |FDE        |    17|
+|17    |FDRE       |  2137|
+|18    |FDSE       |    28|
+|19    |IBUF       |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:41 ; elapsed = 00:01:43 . Memory (MB): peak = 947.195 ; gain = 591.820
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1145 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:01:34 . Memory (MB): peak = 947.195 ; gain = 529.117
+Synthesis Optimization Complete : Time (s): cpu = 00:01:41 ; elapsed = 00:01:43 . Memory (MB): peak = 947.195 ; gain = 591.820
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1457 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 228 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 211 instances
+  FDE => FDRE: 17 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+295 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:44 ; elapsed = 00:01:46 . Memory (MB): peak = 955.387 ; gain = 611.477
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.runs/design_1_AC7606_0_3_synth_1/design_1_AC7606_0_3.dcp' has been generated.

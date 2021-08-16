@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Zynq_other/Zynq_Projects/Zynq_DMA_EMAC_AD7606/Zynq_DMA_EMAC.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="8174095fs"></ZoomEndTime>
+      <Cursor1Time time="201000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="223"></NameColumnWidth>
+      <ValueColumnWidth column_width="94"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="design_1_i/AC7606_0_M00_AXIS_TVALID" type="logic">
+      <obj_property name="ElementShortName">design_1_i/AC7606_0_M00_AXIS_TVALID</obj_property>
+      <obj_property name="ObjectShortName">AC7606_0_M00_AXIS_TVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/AC7606_0_M00_AXIS_TREADY" type="logic">
+      <obj_property name="ElementShortName">design_1_i/AC7606_0_M00_AXIS_TREADY</obj_property>
+      <obj_property name="ObjectShortName">AC7606_0_M00_AXIS_TREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/AC7606_0_M00_AXIS_TDATA" type="array">
+      <obj_property name="ElementShortName">design_1_i/AC7606_0_M00_AXIS_TDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AC7606_0_M00_AXIS_TDATA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/AC7606_0_M00_AXIS_TLAST" type="logic">
+      <obj_property name="ElementShortName">design_1_i/AC7606_0_M00_AXIS_TLAST</obj_property>
+      <obj_property name="ObjectShortName">AC7606_0_M00_AXIS_TLAST</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_dma_0_M_AXIS_MM2S_TDATA" type="array">
+      <obj_property name="ElementShortName">design_1_i/axi_dma_0_M_AXIS_MM2S_TDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_dma_0_M_AXIS_MM2S_TDATA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_dma_0_M_AXIS_MM2S_TLAST" type="logic">
+      <obj_property name="ElementShortName">design_1_i/axi_dma_0_M_AXIS_MM2S_TLAST</obj_property>
+      <obj_property name="ObjectShortName">axi_dma_0_M_AXIS_MM2S_TLAST</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_dma_0_M_AXIS_MM2S_TREADY" type="logic">
+      <obj_property name="ElementShortName">design_1_i/axi_dma_0_M_AXIS_MM2S_TREADY</obj_property>
+      <obj_property name="ObjectShortName">axi_dma_0_M_AXIS_MM2S_TREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_dma_0_M_AXIS_MM2S_TVALID" type="logic">
+      <obj_property name="ElementShortName">design_1_i/axi_dma_0_M_AXIS_MM2S_TVALID</obj_property>
+      <obj_property name="ObjectShortName">axi_dma_0_M_AXIS_MM2S_TVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/AC7606_0/inst/AC7606_v1_0_M00_AXIS_inst/start_processing_i_1_n_0" type="logic">
+      <obj_property name="ElementShortName">design_1_i/AC7606_0/inst/AC7606_v1_0_M00_AXIS_inst/start_processing_i_1_n_0</obj_property>
+      <obj_property name="ObjectShortName">start_processing_i_1_n_0</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/AC7606_0/inst/GET_VOLTAGE" type="logic">
+      <obj_property name="ElementShortName">design_1_i/AC7606_0/inst/GET_VOLTAGE</obj_property>
+      <obj_property name="ObjectShortName">GET_VOLTAGE</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>
