@@ -1,4 +1,4 @@
-#ZedBoard+AD7606B
+# ZedBoard+AD7606B
 __Repository include Qt and Vivado project, which realize next functions:__
 __1) Measurement voltage on first channal ADC AD7606B. This part was make on PL part__
 __2) Translate result to PS logic across DMA__
